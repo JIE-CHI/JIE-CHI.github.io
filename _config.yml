@@ -1,7 +1,7 @@
 # @Author: Jie Chi
 # @Date:   2024-11-07 22:00:26
 # @Last Modified by:   Jie Chi
-# @Last Modified time: 2024-11-07 23:51:54
+# @Last Modified time: 2025-02-11 18:58:39
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -9,7 +9,7 @@
 # Site
 title: 🐖在岛上
 subtitle: ''
-description: 'Hi! My name is Jie Chi (池洁), and I am currently in my final year of my PhD program at the University of Edinburgh. I am part of the Centre for Doctoral Training in Natural Language Processing, supervised by Peter Bell and co-supervised by Catherine Lai. I am now in the theis writing phase, with plans to submit it by August. My PhD research is about multilingual Automatic Speech Recognition, with a particular focus on code-switching settings.'
+description: 'Hi! My name is Jie Chi (池洁), and I recently completed my PhD at the University of Edinburgh. I was part of the Centre for Doctoral Training in Natural Language Processing, supervised by Peter Bell and co-supervised by Catherine Lai. My PhD research is about multilingual Automatic Speech Recognition, with a particular focus on code-switching settings.'
 keywords: "jiechi, edinburgh, cstr, code-switching, asr, phd, university of edinburgh, Chi, Jie, 池洁"
 author: Jie Chi
 language: en
