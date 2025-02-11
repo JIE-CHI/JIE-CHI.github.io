@@ -61,14 +61,54 @@
 </section>
 
 <% if (site.data.projects) { %>
-<section id="projects">
-  <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
-  <ul class="project-list">
-    <% for(var obj in site.data.projects){ %>
-      <li class="project-item">
-        <a href="<%= site.data.projects[obj].url %>"><%= site.data.projects[obj].name %></a>: <%- markdown(site.data.projects[obj].desc) %>
-      </li>
+  <section id="projects">
+    <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
+    <ul class="project-list">
+      <% var count = 0; %>
+      <% for(var obj in site.data.projects) { %>
+        <li class="project-item" style="<%= count >= 3 ? 'display: none;' : '' %>">
+          <a href="<%= site.data.projects[obj].url %>"><%= site.data.projects[obj].name %></a>: 
+          <%- markdown(site.data.projects[obj].desc) %>
+        </li>
+        <% count++; %>
+      <% } %>
+    </ul>
+  
+    <% if (count > 3) { %>
+      <div class="show-more-container">
+      <button id="show-more-btn" onclick="showMoreProjects()">📰 See More News</button>
+      </div>
     <% } %>
-  </ul>
-</section>
-<% } %>
+  </section>
+  <% } %>
+
+  <style>
+    .show-more-container {
+      width: 100%; /* Full width to center content */
+      text-align: center; /* Centers inline elements inside */
+      margin-top: 15px;
+    }
+  
+    #show-more-btn {
+      padding: 12px 18px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      display: inline-block; /* Ensures button respects text alignment */
+    }
+  
+    #show-more-btn:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+  </style>
+  <script>
+    function showMoreProjects() {
+      var items = document.querySelectorAll('.project-item');
+      for (var i = 3; i < items.length; i++) {
+        items[i].style.display = "list-item";
+      }
+      document.getElementById('show-more-btn').style.display = "none";
+    }
+  </script>
