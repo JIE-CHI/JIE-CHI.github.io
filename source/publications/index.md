@@ -2,20 +2,50 @@
 title: publications
 date: 2024-11-07 22:01:34
 ---
+**Discriminating Form and Meaning in Multilingual Models with Minimal-Pair ABX Tasks**
+   *Authors:* Maureen de Seyssel*, Jie Chi*, Skyler Seto, Maartje ter Hoeve, Masha Fedzechkina, Natalie Schluter 
+   *Conference:* EMNLP 2025  
+   *[preprint](https://arxiv.org/pdf/2505.17747)* | <button onclick="toggleBibtex('bibtex_abx')">BibTeX</button>
+
+<pre id="bibtex_abx" style="display: none; background: #f5f5f5; padding: 10px; border-radius: 5px;">
+@misc{deseyssel2025discriminatingformmeaningmultilingual,
+      title={Discriminating Form and Meaning in Multilingual Models with Minimal-Pair ABX Tasks}, 
+      author={Maureen de Seyssel and Jie Chi and Skyler Seto and Maartje ter Hoeve and Masha Fedzechkina and Natalie Schluter},
+      year={2025},
+      eprint={2505.17747},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.17747}, 
+}
+</pre>
+
+
+
+
 **The Role of Prosody in Spoken Question Answering**
    *Authors:* Jie Chi, Maureen de Seyssel, Natalie Schluter  
    *Conference:* Findings of NAACL  
-   *[Preprint](https://arxiv.org/pdf/2502.05389)* | <button onclick="toggleBibtex('bibtex_prosody')">BibTeX</button>
+   *[link](https://aclanthology.org/2025.findings-naacl.471.pdf)* | <button onclick="toggleBibtex('bibtex_prosody')">BibTeX</button>
 
 <pre id="bibtex_prosody" style="display: none; background: #f5f5f5; padding: 10px; border-radius: 5px;">
-@misc{chi2025roleprosodyspokenquestion,
-      title={The Role of Prosody in Spoken Question Answering}, 
-      author={Jie Chi and Maureen de Seyssel and Natalie Schluter},
-      year={2025},
-      eprint={2502.05389},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.05389}, 
+@inproceedings{chi-etal-2025-role,
+    title = "The Role of Prosody in Spoken Question Answering",
+    author = "Chi, Jie  and
+      de Seyssel, Maureen  and
+      Schluter, Natalie",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.471/",
+    doi = "10.18653/v1/2025.findings-naacl.471",
+    pages = "8468--8479",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Spoken language understanding research to date has generally carried a heavy text perspective. Most datasets are derived from text, which is then subsequently synthesized into speech, and most models typically rely on automatic transcriptions of speech. This is to the detriment of prosody{--}additional information carried by the speech signal beyond the phonetics of the words themselves and difficult to recover from text alone. In this work, we investigate the role of prosody in Spoken Question Answering. By isolating prosodic and lexical information on the SLUE-SQA-5 dataset, which consists of natural speech, we demonstrate that models trained on prosodic information alone can perform reasonably well by utilizing prosodic cues. However, we find that when lexical information is available, models tend to predominantly rely on it. Our findings suggest that while prosodic cues provide valuable supplementary information, more effective integration methods are required to ensure prosody contributes more significantly alongside lexical features."
 }
 </pre>
 
