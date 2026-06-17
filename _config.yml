@@ -7,9 +7,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 🐖在岛上
+title: Jie Chi
 subtitle: ''
-description: 'Hi! My name is Jie Chi (池洁), and I am a machine learning researcher at [Apple MLR](https://machinelearning.apple.com/) in the Copenhagen office. I was part of the [Centre for Doctoral Training in Natural Language Processing](https://web.inf.ed.ac.uk/cdt/natural-language-processing) at the University of Edinburgh, supervised by Peter Bell and co-supervised by Catherine Lai.'
+description: 'I am a machine learning researcher at [Apple MLR](https://machinelearning.apple.com/) in Copenhagen. My research focuses on speech and language processing, with particular interests in multilingual automatic speech recognition, code-switching, prosody, and spoken language understanding. I completed my PhD at the University of Edinburgh as part of the [Centre for Doctoral Training in Natural Language Processing](https://web.inf.ed.ac.uk/cdt/natural-language-processing), supervised by Peter Bell and co-supervised by Catherine Lai.'
 keywords: "jiechi, apple, machine learning research, edinburgh, cstr, code-switching, asr, phd, university of edinburgh, Chi, Jie, 池洁"
 author: Jie Chi
 language: en

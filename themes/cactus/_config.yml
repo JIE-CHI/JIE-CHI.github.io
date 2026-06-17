@@ -20,7 +20,6 @@ direction: ltr
 nav:
   home: /
   about: /about/
-  articles: /archives/
   Publications: /publications/
 
 

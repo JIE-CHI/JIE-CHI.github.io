@@ -2,20 +2,70 @@
 title: publications
 date: 2024-11-07 22:01:34
 ---
+**Which Data Matter? Embedding-Based Data Selection for Speech Recognition**
+   *Authors:* Zakaria Aldeneh, Skyler Seto, Maureen de Seyssel, Jie Chi, Zijin Gu, Takuya Higuchi, Jee-weon Jung, Shinji Watanabe, David Grangier, Barry-John Theobald, Tatiana Likhomanenko  
+   *Preprint:* arXiv, 2026  
+   *[preprint](https://arxiv.org/abs/2603.05819)* | <button onclick="toggleBibtex('bibtex_data_matter')">BibTeX</button>
+
+<pre id="bibtex_data_matter" style="display: none; background: #f5f5f5; padding: 10px; border-radius: 5px;">
+@misc{aldeneh2026datamatterembeddingbaseddata,
+      title={Which Data Matter? Embedding-Based Data Selection for Speech Recognition}, 
+      author={Zakaria Aldeneh and Skyler Seto and Maureen de Seyssel and Jie Chi and Zijin Gu and Takuya Higuchi and Jee-weon Jung and Shinji Watanabe and David Grangier and Barry-John Theobald and Tatiana Likhomanenko},
+      year={2026},
+      eprint={2603.05819},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2603.05819}, 
+}
+</pre>
+
+
+**Leveraging Audio-Visual Data to Reduce the Multilingual Gap in Self-Supervised Speech Models**
+   *Authors:* María Andrea Cruz Blandón, Zakaria Aldeneh, Jie Chi, Maureen de Seyssel  
+   *Conference:* ICASSP 2026  
+   *[link](https://ieeexplore.ieee.org/abstract/document/11460798)* | *[preprint](https://arxiv.org/pdf/2509.17523)* | <button onclick="toggleBibtex('bibtex_av_ssl')">BibTeX</button>
+
+<pre id="bibtex_av_ssl" style="display: none; background: #f5f5f5; padding: 10px; border-radius: 5px;">
+@inproceedings{cruzblandon2026leveraging,
+  title     = {Leveraging Audio-Visual Data to Reduce the Multilingual Gap in Self-Supervised Speech Models},
+  author    = {María Andrea Cruz Blandón and Zakaria Aldeneh and Jie Chi and Maureen de Seyssel},
+  year      = {2026},
+  booktitle = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages     = {17902--17906},
+  publisher = {IEEE},
+  url       = {https://ieeexplore.ieee.org/abstract/document/11460798},
+}
+</pre>
+
+
 **Discriminating Form and Meaning in Multilingual Models with Minimal-Pair ABX Tasks**
    *Authors:* Maureen de Seyssel*, Jie Chi*, Skyler Seto, Maartje ter Hoeve, Masha Fedzechkina, Natalie Schluter 
    *Conference:* EMNLP 2025  
-   *[preprint](https://arxiv.org/pdf/2505.17747)* | <button onclick="toggleBibtex('bibtex_abx')">BibTeX</button>
+   *[link](https://aclanthology.org/2025.emnlp-main.1210/)* | *[preprint](https://arxiv.org/pdf/2505.17747)* | <button onclick="toggleBibtex('bibtex_abx')">BibTeX</button>
 
 <pre id="bibtex_abx" style="display: none; background: #f5f5f5; padding: 10px; border-radius: 5px;">
-@misc{deseyssel2025discriminatingformmeaningmultilingual,
-      title={Discriminating Form and Meaning in Multilingual Models with Minimal-Pair ABX Tasks}, 
-      author={Maureen de Seyssel and Jie Chi and Skyler Seto and Maartje ter Hoeve and Masha Fedzechkina and Natalie Schluter},
-      year={2025},
-      eprint={2505.17747},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.17747}, 
+@inproceedings{de-seyssel-etal-2025-discriminating,
+    title = "Discriminating Form and Meaning in Multilingual Models with Minimal-Pair {ABX} Tasks",
+    author = "de Seyssel, Maureen  and
+      Chi, Jie  and
+      Seto, Skyler  and
+      Ter Hoeve, Maartje  and
+      Fedzechkina, Masha  and
+      Schluter, Natalie",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1210/",
+    doi = "10.18653/v1/2025.emnlp-main.1210",
+    pages = "23704--23725",
+    ISBN = "979-8-89176-332-6",
+    abstract = "We introduce a set of training-free ABX-style discrimination tasks to evaluate how multilingual language models represent language identity (form) and semantic content (meaning). Inspired from speech processing, these zero-shot tasks measure whether minimal differences in representation can be reliably detected. This offers a flexible and interpretable alternative to probing. Applied to XLM-R (Conneau et al, 2020) across pretraining checkpoints and layers, we find that language discrimination declines over training and becomes concentrated in lower layers, while meaning discrimination strengthens over time and stabilizes in deeper layers. We then explore probing tasks, showing some alignment between our metrics and linguistic learning performance.Our results position ABX tasks as a lightweight framework for analyzing the structure of multilingual representations."
 }
 </pre>
 

@@ -1,4 +1,4 @@
-<section id="about" class="p-note">
+<section id="about" class="p-note academic-intro">
   <% if (config.description) { %>
     <%- markdown(config.description) %>
   <% } %>
@@ -32,37 +32,33 @@
   <% } %>
 </section>
 
-<section id="writing">
-  <span class="h1"><a href="<%- url_for(theme.nav.articles) %>"><%= __('index.articles') %></a></span>
-  <% if (theme.tags_overview && site.tags.length) { %>
-  <span class="h2"><%= __('index.topics') %></span>
-  <span class="widget tagcloud">
-    <%- tagcloud(theme.tags_overview) %>
-  </span>
-  <span class="h2"><%= __('index.most_recent') %></span>
-  <% } %>
-  <ul class="post-list">
-    <% var field_sort = theme.posts_overview.sort_updated ? 'updated' : 'date' %>
-    <% if (theme.posts_overview.show_all_posts) { %>
-      <% var show_posts = page.posts.sort(field_sort, 'desc') %>
-    <% } else { %>
-      <% var show_posts = site.posts.sort(field_sort, 'desc').limit(theme.posts_overview.post_count || 5) %>
-    <% } %>
-    <% show_posts.each(function(post, i){ %>
-      <li class="post-item">
-        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
-        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
-      </li>
-    <% }); %>
+<section id="research">
+  <span class="h1">Research Interests</span>
+  <ul class="interest-list">
+    <li>Multilingual and code-switched automatic speech recognition</li>
+    <li>Speech and language understanding beyond text-only representations</li>
+    <li>Prosody, linguistic structure, and evaluation for speech and NLP systems</li>
   </ul>
-  <% if (theme.posts_overview.show_all_posts) { %>
-    <%- partial('_partial/pagination') %>
-  <% } %>
 </section>
 
+<% if (site.data.publications) { %>
+  <section id="selected-publications">
+    <span class="h1"><a href="<%- url_for('/publications/') %>">Selected Publications</a></span>
+    <ul class="publication-list">
+      <% site.data.publications.forEach(function(pub) { %>
+        <li class="publication-item">
+          <span class="publication-title"><a href="<%- pub.url %>"><%= pub.title %></a></span>
+          <span class="publication-authors"><%= pub.authors %></span>
+          <span class="publication-venue"><%= pub.venue %></span>
+        </li>
+      <% }); %>
+    </ul>
+  </section>
+<% } %>
+
 <% if (site.data.projects) { %>
-  <section id="projects">
-    <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
+  <section id="news">
+    <span class="h1">News</span>
     <ul class="project-list">
       <% var count = 0; %>
       <% for(var obj in site.data.projects) { %>
@@ -76,7 +72,7 @@
   
     <% if (count > 3) { %>
       <div class="show-more-container">
-      <button id="show-more-btn" onclick="showMoreProjects()">📰 See More News</button>
+      <button id="show-more-btn" onclick="showMoreProjects()">See More News</button>
       </div>
     <% } %>
   </section>
@@ -95,12 +91,13 @@
       font-weight: bold;
       border-radius: 6px;
       cursor: pointer;
-      transition: transform 0.2s;
+      border: 1px solid currentColor;
+      background: transparent;
       display: inline-block; /* Ensures button respects text alignment */
     }
   
     #show-more-btn:hover {
-      transform: scale(1.05); /* Slight zoom effect */
+      background: rgba(86, 124, 119, .1);
     }
   </style>
   <script>
